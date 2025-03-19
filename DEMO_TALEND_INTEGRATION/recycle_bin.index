@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/foresight</deletedFolders>
+  <deletedFolders>process/foresight/execution_master</deletedFolders>
+  <deletedItems id="_CXyV8ORuEe-Qqs7Ho6LLdw" path="" type="PROCESS"/>
+  <deletedItems id="_ZXnpMAPzEfCxtqDooRPJgQ" path="" type="PROCESS"/>
+  <deletedItems id="_O_lhUAEaEe2CI7X0FeFUcg" path="a_arest" type="PROCESS"/>
+  <deletedItems id="_d7Qx8PJ4Ee-KxO4uN2qWUg" path="foresight/execution_master" type="PROCESS"/>
+</recyclebin:RecycleBin>

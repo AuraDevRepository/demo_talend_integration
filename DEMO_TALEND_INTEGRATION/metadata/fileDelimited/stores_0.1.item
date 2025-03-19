@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_cUtmQQQQEfCxtqDooRPJgQ" name="stores" dataPackage="_cUtmQgQQEfCxtqDooRPJgQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Dinesh/Desktop/Talend DI Demo/DataSets/dq dataset/Stores.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_cUtmQgQQEfCxtqDooRPJgQ" name="default" dataManager="_cUtmQQQQEfCxtqDooRPJgQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUtmQwQQEfCxtqDooRPJgQ" id="_YVG9IAQQEfCxtqDooRPJgQ" label="store_metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmRAQQEfCxtqDooRPJgQ" label="store_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmRQQQEfCxtqDooRPJgQ" label="region_id" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmRgQQEfCxtqDooRPJgQ" label="store_type" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmRwQQEfCxtqDooRPJgQ" label="store_name" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmSAQQEfCxtqDooRPJgQ" label="store_street_address" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmSQQQEfCxtqDooRPJgQ" label="store_city" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmSgQQEfCxtqDooRPJgQ" label="store_state" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmSwQQEfCxtqDooRPJgQ" label="store_country" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmTAQQEfCxtqDooRPJgQ" label="store_phone" length="12" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmTQQQEfCxtqDooRPJgQ" label="first_opened_date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmTgQQEfCxtqDooRPJgQ" label="last_remodel_date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmTwQQEfCxtqDooRPJgQ" label="total_sqft" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUtmUAQQEfCxtqDooRPJgQ" label="grocery_sqft" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
