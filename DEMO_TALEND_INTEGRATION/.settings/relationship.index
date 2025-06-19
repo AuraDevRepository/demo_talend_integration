@@ -2675,6 +2675,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_O_lhUAEaEe2CI7X0FeFUcg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_FJVGgAEdEe2CI7X0FeFUcg - Hongkong_Stock_Market",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_OzUfALRREdyAzNiOMBzNFA",
     "version" : "0.1",
     "type" : "job"
@@ -3362,6 +3373,41 @@
     "id" : "GetRandomPhoneNum",
     "version" : "Latest",
     "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_d7Qx8PJ4Ee-KxO4uN2qWUg",
+    "version" : "0.2",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Aqm0APaZEe-UEY4jKKZ81w",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_EcWH8PBREe-jlvCrJyWHXg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_JjZtwPQ1Ee-KxO4uN2qWUg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_O1vFkPWfEe-KxO4uN2qWUg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_bd4g0PAYEe-jlvCrJyWHXg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_s1wLkPAYEe-jlvCrJyWHXg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "TALEND_DATA_INTEGRATION:_VvoVkPWfEe-KxO4uN2qWUg",
+    "version" : "Latest",
+    "type" : "job"
   } ]
 }, {
   "baseItem" : {
