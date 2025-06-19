@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_52_SAAQIEfCxtqDooRPJgQ" name="input_json_file" id="_5281wAQIEfCxtqDooRPJgQ" dataPackage="_52_5HwQIEfCxtqDooRPJgQ" JSONFilePath="C:/Users/dell/Desktop/Talend DI Demo/DataSets/json dataset/bookstore/Books.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_52_5EAQIEfCxtqDooRPJgQ" LimitBoucle="50" AbsoluteXPathQuery="$[*]">
+      <schemaTargets xmi:id="_52_5EQQIEfCxtqDooRPJgQ" RelativeXPathQuery="id" TagName="id"/>
+      <schemaTargets xmi:id="_52_5EgQIEfCxtqDooRPJgQ" RelativeXPathQuery="url" TagName="url"/>
+      <schemaTargets xmi:id="_52_5EwQIEfCxtqDooRPJgQ" RelativeXPathQuery="title" TagName="title"/>
+      <schemaTargets xmi:id="_52_5FAQIEfCxtqDooRPJgQ" RelativeXPathQuery="upc" TagName="upc"/>
+      <schemaTargets xmi:id="_52_5FQQIEfCxtqDooRPJgQ" RelativeXPathQuery="product_type" TagName="product_type"/>
+      <schemaTargets xmi:id="_52_5FgQIEfCxtqDooRPJgQ" RelativeXPathQuery="price_excl_tax" TagName="price_excl_tax"/>
+      <schemaTargets xmi:id="_52_5FwQIEfCxtqDooRPJgQ" RelativeXPathQuery="price_incl_tax" TagName="price_incl_tax"/>
+      <schemaTargets xmi:id="_52_5GAQIEfCxtqDooRPJgQ" RelativeXPathQuery="tax" TagName="tax"/>
+      <schemaTargets xmi:id="_52_5GQQIEfCxtqDooRPJgQ" RelativeXPathQuery="price" TagName="price"/>
+      <schemaTargets xmi:id="_52_5GgQIEfCxtqDooRPJgQ" RelativeXPathQuery="availability" TagName="availability"/>
+      <schemaTargets xmi:id="_52_5GwQIEfCxtqDooRPJgQ" RelativeXPathQuery="num_reviews" TagName="num_reviews"/>
+      <schemaTargets xmi:id="_52_5HAQIEfCxtqDooRPJgQ" RelativeXPathQuery="stars" TagName="stars"/>
+      <schemaTargets xmi:id="_52_5HQQIEfCxtqDooRPJgQ" RelativeXPathQuery="category" TagName="category"/>
+      <schemaTargets xmi:id="_52_5HgQIEfCxtqDooRPJgQ" RelativeXPathQuery="description" TagName="description"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_52_5HwQIEfCxtqDooRPJgQ" name="default" dataManager="_52_SAAQIEfCxtqDooRPJgQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_52_5IAQIEfCxtqDooRPJgQ" id="_tsz0IAQIEfCxtqDooRPJgQ" label="json_metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5IQQIEfCxtqDooRPJgQ" label="id" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5IgQIEfCxtqDooRPJgQ" label="url" length="246" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5IwQIEfCxtqDooRPJgQ" label="title" length="8646" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5JAQIEfCxtqDooRPJgQ" label="upc" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5JQQIEfCxtqDooRPJgQ" label="product_type" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5JgQIEfCxtqDooRPJgQ" label="price_excl_tax" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5JwQIEfCxtqDooRPJgQ" label="price_incl_tax" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5KAQIEfCxtqDooRPJgQ" label="tax" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5KQQIEfCxtqDooRPJgQ" label="price" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5KgQIEfCxtqDooRPJgQ" label="availability" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5KwQIEfCxtqDooRPJgQ" label="num_reviews" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5LAQIEfCxtqDooRPJgQ" label="stars" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5LQQIEfCxtqDooRPJgQ" label="category" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_52_5LgQIEfCxtqDooRPJgQ" label="description" length="8671" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
