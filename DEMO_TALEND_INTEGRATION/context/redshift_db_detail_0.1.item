@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Oac_sP_PEe-ylubY6t5lhQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_Oac_sf_PEe-ylubY6t5lhQ" comment="" name="redshift_db_host" prompt="redshift_db_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Oac_sv_PEe-ylubY6t5lhQ" comment="" name="redshift_db_port" prompt="redshift_db_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Oac_s__PEe-ylubY6t5lhQ" comment="" name="redshift_db_name" prompt="redshift_db_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Oac_tP_PEe-ylubY6t5lhQ" comment="" name="redshift_db_user_name" prompt="redshift_db_user_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Oac_tf_PEe-ylubY6t5lhQ" comment="" name="redshift_db_pwd" prompt="redshift_db_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qTKlyBjkLiw0tXAMWNo344bvwp9PS/Iz+vmeUeYhNFr61dfH"/>
+</talendfile:ContextType>
