@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_EckKYPBREe-jlvCrJyWHXg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_EckKYfBREe-jlvCrJyWHXg" comment="" name="s3_bucket_name" prompt="s3_bucket_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_EckKYvBREe-jlvCrJyWHXg" comment="" name="s3_access_key" prompt="s3_access_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_EckKY_BREe-jlvCrJyWHXg" comment="" name="s3_secret_key" prompt="s3_secret_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_48h_4PJ4Ee-KxO4uN2qWUg" comment="" name="s3_region_name" prompt="s3_region_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_48h_4fJ4Ee-KxO4uN2qWUg" comment="" name="s3_country_name" prompt="s3_country_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_48h_4vJ4Ee-KxO4uN2qWUg" comment="" name="s3_segment_name" prompt="s3_segment_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_x_JZcDZEEfCEKu_KaLFlPw" comment="" name="s3_qa_bucket_name" prompt="s3_qa_bucket_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_xALmYG0kEfC33N5Xj-cmsg" comment="" name="s3_role_arn" prompt="s3_role_arn?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_xALmYW0kEfC33N5Xj-cmsg" comment="" name="s3_role_session_name" prompt="s3_role_session_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

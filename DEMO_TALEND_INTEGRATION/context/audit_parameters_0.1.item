@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_VfaJEEEeEfCUzdHa_33WmQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_fAuuUEEeEfCUzdHa_33WmQ" comment="" name="source_table_name" prompt="source_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fAuuUUEeEfCUzdHa_33WmQ" comment="" name="target_table_name" prompt="target_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fAuuUkEeEfCUzdHa_33WmQ" comment="" name="source_record_count" prompt="source_record_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_fAuuU0EeEfCUzdHa_33WmQ" comment="" name="target_insert_count" prompt="target_insert_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_fAuuVEEeEfCUzdHa_33WmQ" comment="" name="target_update_count" prompt="target_update_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_fAuuVUEeEfCUzdHa_33WmQ" comment="" name="target_delete_count" prompt="target_delete_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_K2yuIEEqEfCUzdHa_33WmQ" comment="" name="load_area" prompt="load_area?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_K-hIIEFpEfCUzdHa_33WmQ" comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_MqLacEHyEfCUzdHa_33WmQ" comment="" name="s3_datalake_temp_process_dir" prompt="s3_datalake_temp_process_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_EmLs0EIIEfCUzdHa_33WmQ" comment="" name="batch_loadid" prompt="batch_loadid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_aluBoET6EfC76tTLkplA-w" comment="" name="last_loaded_date_id" prompt="last_loaded_date_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_881v4EUHEfC76tTLkplA-w" comment="" name="job_server_temp_processing_file_path" prompt="job_server_temp_processing_file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_3t6tsEXoEfCpxJnHRVvC0w" comment="" name="source_target_count_diff" prompt="source_target_count_diff?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_lH5XUEX0EfCpxJnHRVvC0w" comment="" name="extract_query" prompt="extract_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_lH5XUUX0EfCpxJnHRVvC0w" comment="" name="update_query" prompt="update_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_lH5XUkX0EfCpxJnHRVvC0w" comment="" name="delete_query" prompt="delete_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_sOoZAEqgEfC80tOVG82Kdw" comment="" name="field_names_s3_file" prompt="field_names_s3_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_zJFsEErUEfC80tOVG82Kdw" comment="" name="min_batch_loadid" prompt="min_batch_loadid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_zJFsEUrUEfC80tOVG82Kdw" comment="" name="max_batch_loadid" prompt="max_batch_loadid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_BNJQUE_xEfCrbq-osQM4QQ" comment="" name="ods_last_loaded_date_id" prompt="ods_last_loaded_date_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_GYt9UE_xEfCrbq-osQM4QQ" comment="" name="rds_min_loaded_date_id" prompt="rds_min_loaded_date_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_tKvDME_2EfCrbq-osQM4QQ" comment="" name="record_count_to_delete_from_rds" prompt="record_count_to_delete_from_rds?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_Q1cJIFAYEfCrbq-osQM4QQ" comment="" name="skip_from_deletion" prompt="skip_from_deletion?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;"/>
+  <contextParameter xmi:id="_v_KvUFAaEfCrbq-osQM4QQ" comment="" name="target_reject_count" prompt="target_reject_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+  <contextParameter xmi:id="_JIT1oFApEfCrbq-osQM4QQ" comment="" name="rds_days_to_delete_before_current_date" prompt="rds_days_to_delete_before_current_date?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_V17lgFAuEfCrbq-osQM4QQ" comment="" name="extract_query_2" prompt="extract_query_2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_V17lgVAuEfCrbq-osQM4QQ" comment="" name="update_query_2" prompt="update_query_2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_V17lglAuEfCrbq-osQM4QQ" comment="" name="delete_query_2" prompt="delete_query_2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_OrxawFDEEfCrbq-osQM4QQ" comment="" name="job_start_time" prompt="job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  <contextParameter xmi:id="_Z-AqgFG1EfCwJv_3sQTW9A" comment="" name="target_table_name_2" prompt="target_table_name_2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

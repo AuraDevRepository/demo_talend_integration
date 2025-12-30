@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_JjnwMPQ1Ee-KxO4uN2qWUg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ayJcQPQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_token_fetch_url" prompt="foresight_api_token_fetch_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcQfQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_client_id" prompt="foresight_api_client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcQvQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_client_secret" prompt="foresight_api_client_secret?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_ayJcQ_Q2Ee-KxO4uN2qWUg" comment="" name="foresight_api_access_token" prompt="foresight_api_access_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcRPQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_items_upload_url" prompt="foresight_api_items_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcRfQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_sales_upload_url" prompt="foresight_api_sales_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcRvQ2Ee-KxO4uN2qWUg" comment="" name="foresight_api_external_daily_upload_url" prompt="foresight_api_external_daily_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ayJcR_Q2Ee-KxO4uN2qWUg" comment="" name="foresight_api_segment_tenant_id" prompt="foresight_api_segment_tenant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_CmL2cPRVEe-KxO4uN2qWUg" comment="" name="forecast_api_demand_download_url" prompt="forecast_api_demand_download_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_AUQP4HzoEfCZGNzDhdbXPw" comment="" name="foresight_api_external_monthly_upload_url" prompt="foresight_api_external_monthly_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_AUQP4XzoEfCZGNzDhdbXPw" comment="" name="foresight_api_external_yearly_upload_url" prompt="foresight_api_external_yearly_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_AUQP4nzoEfCZGNzDhdbXPw" comment="" name="foresight_api_external_quarterly_upload_url" prompt="foresight_api_external_quarterly_upload_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
