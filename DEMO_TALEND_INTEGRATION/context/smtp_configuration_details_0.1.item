@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Aq1dgPaZEe-UEY4jKKZ81w" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_Aq2EkPaZEe-UEY4jKKZ81w" comment="" name="smtp_host" prompt="smtp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Aq2EkfaZEe-UEY4jKKZ81w" comment="" name="smtp_port" prompt="smtp_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Aq2EkvaZEe-UEY4jKKZ81w" comment="" name="smtp_username" prompt="smtp_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Aq2Ek_aZEe-UEY4jKKZ81w" comment="" name="smtp_pwd" prompt="smtp_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:OAkf16eSykqwnfwrk5LSUR+pKt32y+WHMxY0oMSEe5xwjII/yhqXivjAWOk="/>
+  <contextParameter xmi:id="_Aq2ElPaZEe-UEY4jKKZ81w" comment="" name="smtp_from_address" prompt="smtp_from_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Aq2ElfaZEe-UEY4jKKZ81w" comment="" name="smtp_foresight_success_mail_to" prompt="smtp_foresight_success_mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Aq2ElvaZEe-UEY4jKKZ81w" comment="" name="smtp_foresight_failure_mail_to" prompt="smtp_foresight_failure_mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_3-H1oPgEEe-2beUal4ZXLA" comment="" name="smtp_foresight_broadcast_mail_address" prompt="smtp_foresight_broadcast_mail_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_lI5VMACNEfCylubY6t5lhQ" comment="" name="smtp_netop_success_mail_to" prompt="smtp_netop_success_mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_lI5VMQCNEfCylubY6t5lhQ" comment="" name="smtp_netop_failure_mail_to" prompt="smtp_netop_failure_mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_k4t2AAiiEfCE-aJrdJtI5Q" comment="" name="receipient_first_name" prompt="receipient_first_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_k4t2AQiiEfCE-aJrdJtI5Q" comment="" name="receipient_last_name" prompt="receipient_last_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_k4t2AgiiEfCE-aJrdJtI5Q" comment="" name="receipient_full_name" prompt="receipient_full_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_bUM90EBQEfCoeLpun2aD5Q" comment="" name="smtp_netop_success_mail_cc" prompt="smtp_netop_success_mail_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_bUM90UBQEfCoeLpun2aD5Q" comment="" name="smtp_netop_failure_mail_cc" prompt="smtp_netop_failure_mail_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_4bpDsEB0EfCoeLpun2aD5Q" comment="" name="smtp_foresight_success_mail_cc" prompt="smtp_foresight_success_mail_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_4bpDsUB0EfCoeLpun2aD5Q" comment="" name="smtp_foresight_failure_mail_cc" prompt="smtp_foresight_failure_mail_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

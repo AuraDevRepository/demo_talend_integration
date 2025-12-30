@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_O1_kQPWfEe-KxO4uN2qWUg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_O1_kQfWfEe-KxO4uN2qWUg" comment="" name="aurora_db_host" prompt="aurora_db_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_O1_kQvWfEe-KxO4uN2qWUg" comment="" name="aurora_db_port" prompt="aurora_db_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_O1_kQ_WfEe-KxO4uN2qWUg" comment="" name="aurora_db_user_name" prompt="aurora_db_user_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_O1_kRPWfEe-KxO4uN2qWUg" comment="" name="aurora_db_pwd" prompt="aurora_db_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cFfOnpFRHqyoEDB4SkuRxQ5L60Jt99DbHXv28PyDmX8LKNC+XV/ZlA=="/>
+  <contextParameter xmi:id="_O1_kRfWfEe-KxO4uN2qWUg" comment="" name="aurora_etl_config_db" prompt="aurora_etl_config_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde20EFBEfCUzdHa_33WmQ" comment="" name="aurora_pg_db_host" prompt="aurora_pg_db_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde20UFBEfCUzdHa_33WmQ" comment="" name="aurora_pg_db_port" prompt="aurora_pg_db_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde20kFBEfCUzdHa_33WmQ" comment="" name="aurora_pg_etl_config_db" prompt="aurora_pg_etl_config_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde200FBEfCUzdHa_33WmQ" comment="" name="aurora_pg_etl_config_db_schema" prompt="aurora_pg_etl_config_db_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde21EFBEfCUzdHa_33WmQ" comment="" name="aurora_pg_db_user_name" prompt="aurora_pg_db_user_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Rde21UFBEfCUzdHa_33WmQ" comment="" name="aurora_pg_db_pwd" prompt="aurora_pg_db_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+</talendfile:ContextType>

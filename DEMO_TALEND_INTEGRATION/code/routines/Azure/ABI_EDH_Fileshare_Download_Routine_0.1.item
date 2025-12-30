@@ -1,0 +1,100 @@
+package routines;
+import java.net.URLDecoder;
+
+import com.microsoft.azure.storage.*;
+import com.microsoft.azure.storage.file.*;
+
+public class ABI_EDH_Fileshare_Download_Routine {
+
+    public static String[] dnd_files(String Acc_Name,String Acc_Key,String fileSharename,String JS_Dir,String sub_dir) 
+    {
+    	String returnMessage = "";
+    	int fileCounter = 0;
+    	int downloadFileCounter = 0;
+    	String[] return_arr = new String[3];
+    	try
+    	{
+	    	String storageConnectionString =
+	    		    "DefaultEndpointsProtocol=https;" +
+	    		    "AccountName="+Acc_Name+";" +
+	    		    "AccountKey="+Acc_Key;
+	    	
+	    	 //String JS_Dir_formated = JS_Dir.replaceAll("\\\\","\\\\\\\\")+"\\";
+	    	 String JS_Dir_formated = JS_Dir+"/";
+	    	 CloudStorageAccount storageAccount = CloudStorageAccount.parse(storageConnectionString);
+	    	 CloudFileClient fileClient = storageAccount.createCloudFileClient();
+	    	 CloudFileShare share = fileClient.getShareReference(fileSharename);
+	    	 if (share.exists()) 
+	    	 {
+	 		    //System.out.println("New share created with name: "+fileSharename);
+	    		 CloudFileDirectory rootDir = share.getRootDirectoryReference();
+	    		 CloudFileDirectory sampleDir = rootDir.getDirectoryReference(sub_dir);
+	 			
+	 			CloudFile file;
+	 			for ( 
+	 					ListFileItem fileItem : sampleDir.listFilesAndDirectories())
+	 			{
+	 				fileCounter++;
+	 				//String fileUri = String.valueOf(fileItem.getUri());
+	 				String fileUri = URLDecoder.decode(fileItem.getUri().toString(), "UTF-8");
+	 				//System.out.println( fileUri);					
+	 				
+	 				String fileName = fileUri.substring(fileUri.lastIndexOf('/')+1, fileUri.length());
+	 				//fileName = "\""+fileName+"\"";
+	 				//System.out.println( fileName);
+	 				//System.out.println(String.valueOf(fileCounter)+" : "+fileName);
+	 				
+	 				//Download only csv files
+	 				String fileExtention = fileName.substring(fileName.lastIndexOf('.')+1, fileName.length());
+	 				//System.out.println("file Extension: "+fileExtention);
+	 				if(!fileExtention.equalsIgnoreCase("SQL"))
+	 				{
+	 					
+	 					//if(fileName.equals(File_Name))
+	 					//{
+	 						
+	 					
+	 					System.out.println("file: "+fileName+" is ready for download");
+	 					downloadFileCounter++;
+		 				file = sampleDir.getFileReference(fileName);
+		 					//Download the file
+		 				file.downloadToFile(JS_Dir_formated+fileName);
+		 				System.out.println("file: "+fileName+" donwloaded to "+ JS_Dir);
+		 				//Delete the file
+		 				//if ( file.deleteIfExists() ) 
+		 				//{
+		 				//    System.out.println(fileName + ": was deleted");
+		 				//}
+	 					//}
+	 				}
+	 			}
+	 			if (fileCounter==0)
+	 			{
+	 				System.out.println("No Files found in Azure File Share "+ fileSharename);
+	 				returnMessage = "No Files found in Azure File Share "+ fileSharename;
+	 			}
+	 			returnMessage = "Success";
+	 		 }
+	    	 else
+	    	 {
+	    		 System.out.println("File share does not exists");
+	    		 returnMessage = "Failure";
+	    	 }
+	    	 //return returnMessage;
+	    	 return_arr[0]=returnMessage;
+	    	 return_arr[1]=String.valueOf(fileCounter);
+	    	 return_arr[2]=String.valueOf(downloadFileCounter);
+	    	 return return_arr;
+    	}
+    	catch(Exception ex){
+    		System.out.println(ex.getMessage());
+    		returnMessage = "Failure";
+    		//return returnMessage;
+    		return_arr[0]=returnMessage;
+	    	return_arr[1]=String.valueOf(fileCounter);
+	    	return_arr[2]=String.valueOf(downloadFileCounter);
+	    	return return_arr;
+    	}
+         
+    }
+}

@@ -1,0 +1,103 @@
+package routines;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.ss.usermodel.Cell;
+
+
+public class ABI_EDH_CSVToExcelConverter {
+
+    public static void csvtoexcel(String folderName,String outputFile) throws IOException {
+
+        //String folderName = context.input_folder_name;
+        //String outputFile = context.output_file_name;
+
+        final File folder = new File(folderName);
+        List<String> filenames = listFilesForFolder(folder);
+        XSSFWorkbook hwb = new XSSFWorkbook();
+
+        for (String filename : filenames) {
+            System.out.println("...Processing for " + filename + " file");
+
+            try {
+            	XSSFSheet sheet = hwb.createSheet(filename);
+                ArrayList arList1 = readFile(folderName + filename);
+                processFile(arList1, sheet);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        FileOutputStream fileOut = new FileOutputStream(outputFile);
+        hwb.write(fileOut);
+        fileOut.close();
+        System.out.println("\nYour excel file has been generated");
+    }
+
+    public static List<String> listFilesForFolder(final File folder) {
+        List<String> filenames = new LinkedList<String>();
+
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                listFilesForFolder(fileEntry);
+            } else {
+                if(fileEntry.getName().contains(".csv"))
+                    filenames.add(fileEntry.getName());
+            }
+        }
+        return filenames;
+    }
+
+    public static ArrayList readFile(String filename) throws IOException {
+        ArrayList arList = new ArrayList(), al = null;
+        String thisLine;
+        int count = 0, i = 0;
+        FileInputStream fis = new FileInputStream(filename);
+        DataInputStream myInput1 = new DataInputStream(fis);
+
+        while ((thisLine = myInput1.readLine()) != null) {
+            al = new ArrayList();
+            String[] strar = thisLine.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+            for(int j = 0; j < strar.length; j++) {
+                al.add(strar[j]);
+            }
+            arList.add(al);
+            i++;
+        }
+        return arList;
+    }
+
+    public static void processFile(ArrayList arList, XSSFSheet sheet) {
+
+        for(int k = 0; k < arList.size(); k++) {
+            ArrayList ardata = (ArrayList)arList.get(k);
+            XSSFRow row = sheet.createRow((short) 0+k);
+            for(int p = 0; p < ardata.size(); p++) {
+            	XSSFCell cell = row.createCell((short) p);
+                String data = ardata.get(p).toString();
+                if(data.startsWith("=")){
+                cell.setCellType(cell.getCellType());
+                    data=data.replaceAll("\"", "");
+                    data=data.replaceAll("=", "");
+                    cell.setCellValue(data);
+                }
+                else if(data.startsWith("\"")){
+                    data=data.replaceAll("\"", "");
+                    cell.setCellType(cell.getCellType());
+                    cell.setCellValue(data);
+                }
+                else{
+                    data=data.replaceAll("\"", "");
+                    cell.setCellType(cell.getCellType());
+                    cell.setCellValue(data);
+                }
+            }
+        }
+    }
+}
