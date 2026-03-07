@@ -1,0 +1,122 @@
+package routines;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.poi.openxml4j.util.ZipSecureFile;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelHeaderToCsv {
+
+    /**
+     * Converts selected sheets in an Excel file to CSV files
+     * (headers only, one CSV per sheet)
+     *
+     * @param excelPath full path to xlsx file
+     * @param outputDir directory where CSV files will be created
+     */
+    public static void convertAllSheetsToCsv(String excelPath, String outputDir) {
+
+        try {
+            /* ------------------------------------------------------------
+             * POI safety tuning (harmless if not needed)
+             * ------------------------------------------------------------ */
+            ZipSecureFile.setMinInflateRatio(0.001);
+            ZipSecureFile.setMaxEntrySize(200L * 1024 * 1024); // 200 MB
+            ZipSecureFile.setMaxTextSize(50L * 1024 * 1024);  // 50 MB
+
+            /* ------------------------------------------------------------
+             * ONLY these sheets will be processed
+             * ------------------------------------------------------------ */
+            Set<String> allowedSheets = Set.of(
+            		"Demand Forecast Input","Demand History Input","Demand","Equipment Period","Equipment Recipe Period","Equipment","EU ETS CO2 Plant (2)","EU ETS CO2 Time Period (2)","Inventory Constraints","Location Input","Material","New ShipTos","Plant Material","Plant","Production Constraints","Recipe Components","Recipe Outputs","Recipe","Ship-To Customer","Single Production-Source Constraints","Substitution Group","Time Period","Transportation Constraints (2)","Transportation Constraints","Transportation Cost","Transportation Type"
+            		);
+
+
+            FileInputStream fis = new FileInputStream(excelPath);
+            Workbook workbook = new XSSFWorkbook(fis);
+
+            DataFormatter formatter = new DataFormatter();
+
+            File outDir = new File(outputDir);
+            if (!outDir.exists()) {
+                outDir.mkdirs();
+            }
+
+            int sheetCount = workbook.getNumberOfSheets();
+
+            for (int s = 0; s < sheetCount; s++) {
+
+                Sheet sheet = workbook.getSheetAt(s);
+                if (sheet == null) {
+                    continue;
+                }
+
+                String sheetName = sheet.getSheetName();
+                if (!allowedSheets.contains(sheetName)) {
+                    continue; // skip unwanted sheets
+                }
+
+                Row headerRow = sheet.getRow(0);
+                if (headerRow == null) {
+                    continue;
+                }
+
+                int lastCol = headerRow.getLastCellNum();
+                if (lastCol <= 0) {
+                    continue;
+                }
+
+                List<String> headers = new ArrayList<String>();
+                Set<String> seen = new HashSet<String>();
+
+                for (int c = 0; c < lastCol; c++) {
+                    Cell cell = headerRow.getCell(c);
+                    String header;
+
+                    if (cell == null) {
+                        header = "COL_" + (c + 1);
+                    } else {
+                        header = formatter.formatCellValue(cell).trim();
+                        if (header.isEmpty()) {
+                            header = "COL_" + (c + 1);
+                        }
+                    }
+
+                    // Ensure unique column names
+                    if (!seen.add(header)) {
+                        header = header + "_" + (c + 1);
+                    }
+
+                    headers.add(header);
+                }
+
+                String safeSheetName = sheetName.replaceAll("[\\\\/:*?\"<>|]", "_");
+
+                File csvFile = new File(outDir, safeSheetName + ".csv");
+                FileWriter writer = new FileWriter(csvFile);
+
+                writer.write(String.join(",", headers));
+                writer.write("\n");
+                writer.flush();
+                writer.close();
+            }
+
+            workbook.close();
+            fis.close();
+
+        } catch (Exception e) {
+            throw new RuntimeException("Error converting Excel headers to CSV", e);
+        }
+    }
+}

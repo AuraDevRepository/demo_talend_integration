@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_s2ADMPAYEe-jlvCrJyWHXg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_YAVmcPAZEe-jlvCrJyWHXg" comment="" name="rscript_installation_path" prompt="rscript_installation_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PtHeUPBhEe-jlvCrJyWHXg" comment="" name="s3_r_scripts_key_prefix" prompt="s3_r_scripts_key_prefix?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PtHeUfBhEe-jlvCrJyWHXg" comment="" name="s3_r_script_append_and_standardise_file_name" prompt="s3_r_script_append_and_standardise_file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PtHeUvBhEe-jlvCrJyWHXg" comment="" name="s3_r_script_data_prep_file_name" prompt="s3_r_script_data_prep_file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PtHeU_BhEe-jlvCrJyWHXg" comment="" name="job_server_r_script_append_and_standardise_file_path" prompt="job_server_r_script_append_and_standardise_file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PtHeVPBhEe-jlvCrJyWHXg" comment="" name="job_server_r_script_data_prep_file_path" prompt="job_server_r_script_data_prep_file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
